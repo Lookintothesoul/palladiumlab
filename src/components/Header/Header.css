@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 64px;
+  height: 85px;
+  background: transparent;
+}
+
+.header img {
+  cursor: pointer;
+}
+
+.btn_group {
+  display: flex;
+  gap: 50px;
+}
+
+.btn_group button {
+  border: 0;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0);
+  padding: 35px 0;
+}
+
+.btn_group button:hover {
+  border-bottom: 1px solid black;
+}

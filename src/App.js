@@ -1,13 +1,20 @@
+import { Header } from './components/Header/Header'
 import './App.css'
+import { WelcomeSection } from './components/WelcomeSection/WelcomeSection'
+import { Portfolio } from './components/Portfolio/Portfolio'
+import { Contacts } from './components/Contacts/Contacts'
+import { Footer } from './components/Footer/Footer'
 
-function App() {
+export const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>HHHH</p>
-      </header>
+      <Header />
+      <main>
+        <WelcomeSection />
+        <Portfolio />
+        <Contacts />
+        <Footer />
+      </main>
     </div>
   )
 }
-
-export default App

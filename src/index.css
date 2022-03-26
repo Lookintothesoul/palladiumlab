@@ -1,8 +1,78 @@
+@import './fonts/Gilroy/stylesheet.css';
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: Gilroy, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  margin: 0;
+}
+
+hr {
+  color: black;
+}
+
+.outline {
+  color: #fff;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000000;
+}
+
+.label {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.caption1 {
+  font-weight: 500;
+  font-size: 9px;
+  line-height: 12px;
+}
+
+.body1 {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.sub_appl {
+  position: relative;
+
+  font-family: inherit;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  padding: 10px 48px;
+  border: 1px solid rgba(34, 34, 34, 0.3);
+  box-sizing: border-box;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0);
+  margin-bottom: 84px;
+}
+
+.sub_appl::before {
+  position: absolute;
+  top: calc(50% - 0.5px);
+  left: -12px;
+
+  display: block;
+  content: '';
+
+  height: 1px;
+  width: 24px;
+
+  background-color: #222222;
+}
+
+.sub_appl:hover {
+  border: 1px solid rgba(0, 0, 0, 1);
+  background: black;
+  color: white;
+  transition-property: border, background, color;
+  transition-duration: 0.5s;
 }
