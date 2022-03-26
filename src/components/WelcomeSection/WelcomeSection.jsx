@@ -19,10 +19,42 @@ export const WelcomeSection = () => {
       <div className="navigation">
         <img src={img1} alt="" />
         <div className="nav_btn">
-          <button>Услуги по ремонту</button>
-          <button>Виды работ</button>
-          <button>Дизайн интерьера</button>
-          <button>Ремонт помещений</button>
+          <button>
+            <div>
+              <p className="tooltip">
+                С другой стороны реализация намеченных плановых заданий требуют
+                от нас анализа.
+              </p>
+              <p className="btn">Услуги по ремонту</p>
+            </div>
+          </button>
+          <button>
+            <div>
+              <p className="tooltip">
+                С другой стороны реализация намеченных плановых заданий требуют
+                от нас анализа.
+              </p>
+              <p className="btn">Виды работ</p>
+            </div>
+          </button>
+          <button>
+            <div>
+              <p className="tooltip">
+                С другой стороны реализация намеченных плановых заданий требуют
+                от нас анализа.
+              </p>
+              <p className="btn">Дизайн интерьера</p>
+            </div>
+          </button>
+          <button>
+            <div>
+              <p className="tooltip">
+                С другой стороны реализация намеченных плановых заданий требуют
+                от нас анализа.
+              </p>
+              <p className="btn"> Ремонт помещений</p>
+            </div>
+          </button>
         </div>
       </div>
     </section>

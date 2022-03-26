@@ -15,7 +15,7 @@
 }
 
 .welcome_words span {
-  color: #FFF;
+  color: #fff;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #000000;
 }
@@ -47,8 +47,63 @@
   padding: 30px 0;
 }
 
+.btn {
+  font-family: 'Gilroy', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+}
+
+.tooltip {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 12px;
+  text-align: center;
+}
+
+.tooltip:not(:hover) {
+  display: none;
+}
+
 .nav_btn button:hover {
   background: rgba(255, 255, 255, 0.4);
   transition-property: background;
   transition-duration: 0.5s;
+}
+
+.nav_btn button:hover .btn {
+  display: none;
+}
+
+.nav_btn button:hover .tooltip {
+  display: block;
+}
+
+.nav_btn button:active {
+  background: rgba(121, 121, 121, 0.4);
+  transition-property: background;
+  transition-duration: 0.1s;
+}
+
+@media (max-width: 1430px) {
+  .nav_btn {
+    top: 0;
+    height: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  }
+}
+
+@media (max-width: 1020px) {
+  .nav_btn {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .nav_btn {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
 }

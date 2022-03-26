@@ -74,5 +74,11 @@ hr {
   background: black;
   color: white;
   transition-property: border, background, color;
-  transition-duration: 0.5s;
+  transition-duration: 0.1s;
+}
+
+.sub_appl:active {
+  border: 1px solid rgba(34, 34, 34, 0.3);
+  background: rgba(0, 0, 0, 0);
+  color: black;
 }
